@@ -125,7 +125,7 @@ namespace tamrin_kodam
         private double b;//ارتفاع
 
         public Polygon() { }
-        public Polygon(double a, double b , double n) 
+        public Polygon(double a, double b, double n)
         {
             this.a = a;
             this.b = b;
@@ -137,7 +137,7 @@ namespace tamrin_kodam
         }
         public double s()
         {
-            return (b*p())/2;
+            return (b * p()) / 2;
         }
     }
 
@@ -155,11 +155,11 @@ namespace tamrin_kodam
         }
         public double p()
         {
-            return (a+b)*2;
+            return (a + b) * 2;
         }
         public double s()
         {
-            return a*b;
+            return a * b;
         }
     }
     internal class Program
@@ -175,14 +175,14 @@ namespace tamrin_kodam
                 Console.WriteLine(" shekl daire ");
                 int r = Convert.ToInt32(Console.ReadLine());
                 Crcle c = new Crcle(r);
-                Console.WriteLine(" mohit = "+c.p()+" masahat = "+c.s());
+                Console.WriteLine(" mohit = " + c.p() + " masahat = " + c.s());
             }
             else if (x == 2)
             {
                 Console.WriteLine(" shekl moraba ");
                 int a = Convert.ToInt32(Console.ReadLine());
                 Square s = new Square(a);
-                Console.WriteLine(" masahat = "+s.s()+" mohit = "+s.p());
+                Console.WriteLine(" masahat = " + s.s() + " mohit = " + s.p());
             }
             else if (x == 3)
             {
@@ -190,8 +190,8 @@ namespace tamrin_kodam
                 double a = Convert.ToDouble(Console.ReadLine());
                 double b = Convert.ToDouble(Console.ReadLine());
                 double c = Convert.ToDouble(Console.ReadLine());
-                Triangle t = new Triangle(a,b,c);
-                Console.WriteLine(" mohit = "+t.p()+" masahat = "+t.s());
+                Triangle t = new Triangle(a, b, c);
+                Console.WriteLine(" mohit = " + t.p() + " masahat = " + t.s());
             }
             else if (x == 4)
             {
@@ -200,16 +200,16 @@ namespace tamrin_kodam
                 double b = Convert.ToDouble(Console.ReadLine());
                 double C = Convert.ToDouble(Console.ReadLine());
                 double d = Convert.ToDouble(Console.ReadLine());
-                Trapezoid t = new Trapezoid(a,b,C,d);
-                Console.WriteLine(" mohit = "+t.p()+" masahat = "+t.s());
+                Trapezoid t = new Trapezoid(a, b, C, d);
+                Console.WriteLine(" mohit = " + t.p() + " masahat = " + t.s());
             }
             else if (x == 5)
             {
                 Console.WriteLine(" shekl beizi ");
                 double a = Convert.ToDouble(Console.ReadLine());
                 double b = Convert.ToDouble(Console.ReadLine());
-                Oval o = new Oval(a,b);
-                Console.WriteLine(" mohit = "+o.p()+" masaat = "+o.s());
+                Oval o = new Oval(a, b);
+                Console.WriteLine(" mohit = " + o.p() + " masaat = " + o.s());
             }
             else if (x == 6)
             {
@@ -217,16 +217,16 @@ namespace tamrin_kodam
                 double a = Convert.ToDouble(Console.ReadLine());
                 double b = Convert.ToDouble(Console.ReadLine());
                 double n = Convert.ToDouble(Console.ReadLine());
-                Polygon p = new Polygon(a,b,n);
-                Console.WriteLine(" mohit = "+p.p()+" masahat = "+p.s());
+                Polygon p = new Polygon(a, b, n);
+                Console.WriteLine(" mohit = " + p.p() + " masahat = " + p.s());
             }
             else if (x == 7)
             {
                 Console.WriteLine(" shekl mostatil ");
                 double a = Convert.ToDouble(Console.ReadLine());
                 double b = Convert.ToDouble(Console.ReadLine());
-                Rectangle re = new Rectangle(a,b);
-                Console.WriteLine(" mohit = "+re.p()+" masahat = "+re.s());
+                Rectangle re = new Rectangle(a, b);
+                Console.WriteLine(" mohit = " + re.p() + " masahat = " + re.s());
             }
             else
             {
